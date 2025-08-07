@@ -1,0 +1,259 @@
+1.
+Question 1
+ Quel est le résultat du code suivant ?
+
+x = "Gone" 
+if x == "Go": 
+    print('Go') 
+else: 
+    print('Stop')
+print('Mike')
+
+
+Allez Mike
+
+
+
+Mike
+
+
+
+Stop Mike
+
+
+
+Go Stop
+
+
+1 point
+2.
+Question 2
+Un système de surveillance de la température utilise le code suivant pour vérifier si une lecture dépasse un seuil :
+
+current_temp = 18
+current_temp = current_temp > 25
+
+Quelle valeur sera stockée dans current_temp après l'exécution de ces lignes ?
+
+
+25
+
+
+
+Faux
+
+
+
+Vrai
+
+
+
+18
+
+
+1 point
+3.
+Question 3
+Quel est le résultat des lignes de code suivantes ?
+
+x = 5 
+while x != 2: 
+    print(x) 
+    x = x – 1
+
+
+5 4 3 
+
+
+
+5 4 3 2 1
+
+
+
+Le programme ne quittera jamais la Boucle.
+
+
+
+5 4 3 2
+
+
+1 point
+4.
+Question 4
+Une application graphique utilise une classe pour représenter les coordonnées de l'écran. Que s'affichera-t-il lorsque le code suivant sera exécuté ?
+
+class Coordinate(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def display(self):
+        print(f"Position: ({self.x}, {self.y})")
+cursor = Coordinate(15, 30)
+cursor.display()
+
+
+Position : (x, y) 
+
+
+
+(15, 30) 
+
+
+
+Position : (15, 30) 
+
+
+
+Coordonnées(15, 30) 
+
+
+1 point
+5.
+Question 5
+Quel est le résultat des lignes de code suivantes ?
+
+for i, x in enumerate(['A', 'B', 'C']):
+    print(i, 2 * x)
+
+
+0 AA 1 BB 2 CC 
+
+
+
+1 AA 2 BB 3 CC 
+
+
+
+0 A 2 B 4 C 
+
+
+
+0 A 1 B 2 C 
+
+
+1 point
+6.
+Question 6
+Quel est le résultat de l'exécution des lignes de code suivantes ?
+
+class Points(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def print_point(self):
+        print('x=', self.x, ' y=', self.y)
+p2 = Points('Boston', 'Chicago')
+p2.y = 'Denver'
+p2.print_point()
+
+
+x= Denver y= Denver 
+
+
+
+x= Boston y= Denver 
+
+
+
+x= Boston y= Chicago 
+
+
+
+x= Denver y= Boston 
+
+
+1 point
+7.
+Question 7
+Compte tenu de la fonction delta, quand la fonction suivante renverra-t-elle une valeur de 1 ?
+
+def delta(x): 
+    if x == 0: 
+        y = 1 
+    else: 
+        y = 0 
+    return y
+
+
+Jamais 
+
+
+
+Lorsque l'entrée est 1 
+
+
+
+Lorsque l'entrée est à 0 
+
+
+
+Lorsque l'entrée est différente de 0 
+
+
+1 point
+8.
+Question 8
+Quel résultat numérique cette séquence de codes produit-elle lors de son exécution ? 
+
+a = 1 
+def do(x): 
+    a = 100 
+    return x + a 
+print(do(1))
+
+
+SUM de la variable globale et du paramètre 
+
+
+
+Valeur de la variable globale uniquement 
+
+
+
+Produit de la variable locale et du paramètre 
+
+
+
+SUM de la variable locale et du paramètre
+
+
+1 point
+9.
+Question 9
+Quelle définition de fonction présente l'implémentation la plus efficace pour l'addition de deux nombres ? 
+
+
+Fonction intégrée SUM avec paramètres individuels 
+
+
+
+Retour direct de la sommation des paramètres 
+
+
+
+Assignation de variable intermédiaire avant le retour 
+
+
+
+Fonction intégrée de la somme avec conversion en tuple
+
+
+1 point
+10.
+Question 10
+Quelle est la principale raison qui justifie la mise en œuvre d'une gestion granulaire des exceptions à l'aide de blocs catch explicitement typés ?
+
+
+Identifier avec précision la classification des exceptions et la localisation de la source 
+
+
+
+Pour garantir l'arrêt complet du programme en cas d'erreur 
+
+
+
+Pour permettre le contournement sélectif de segments de code pendant l'exécution 
+
+
+
+Le typage explicite des exceptions n'apporte aucun avantage opérationnel 
